@@ -1,0 +1,1207 @@
+/*====================================================
+
+        NUESTRA HISTORIA 💜🌻
+        Diseñado Mobile First
+
+====================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap');
+
+/*=================================
+RESET
+=================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(
+        180deg,
+        #4B1D73 0%,
+        #663399 45%,
+        #8B5CF6 100%
+    );
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+    position:relative;
+
+}
+
+/*=================================
+SCROLL
+=================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#FFD54F;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#3B185F;
+
+}
+
+/*=================================
+FLORES DE FONDO
+=================================*/
+
+.flowers{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+.flowers span{
+
+    position:absolute;
+
+    font-size:40px;
+
+    opacity:.10;
+
+    animation:floatFlower 12s ease-in-out infinite;
+
+}
+
+.flowers span:nth-child(1){
+
+    top:8%;
+    left:8%;
+
+}
+
+.flowers span:nth-child(2){
+
+    top:30%;
+    right:10%;
+
+}
+
+.flowers span:nth-child(3){
+
+    bottom:15%;
+    left:12%;
+
+}
+
+.flowers span:nth-child(4){
+
+    bottom:8%;
+    right:8%;
+
+}
+
+@keyframes floatFlower{
+
+    0%{
+
+        transform:translateY(0px) rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px) rotate(10deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0px) rotate(0deg);
+
+    }
+
+}
+
+/*=================================
+CONTENEDORES
+=================================*/
+
+section,
+header{
+
+    width:100%;
+
+    padding:70px 22px;
+
+}
+
+.hero-content,
+.chapter,
+.gallery-section,
+.video-section,
+.counter-section,
+.letter-section,
+.proposal,
+.ending,
+footer{
+
+    width:100%;
+
+    max-width:430px;
+
+    margin:auto;
+
+}
+
+/*=================================
+PORTADA
+=================================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.small-title{
+
+    color:#FFD54F;
+
+    letter-spacing:4px;
+
+    font-size:12px;
+
+    margin-bottom:15px;
+
+}
+
+.hero h1{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:64px;
+
+    color:#FFD54F;
+
+    margin-bottom:18px;
+
+}
+
+.hero h2{
+
+    font-size:22px;
+
+    font-weight:400;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+.cover-image{
+
+    width:100%;
+
+    border-radius:28px;
+
+    margin:25px 0;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.35);
+
+}
+
+.hero-text{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+/*=================================
+BOTÓN COMENZAR
+=================================*/
+
+.start-button{
+
+    background:#FFD54F;
+
+    color:#4B1D73;
+
+    border:none;
+
+    border-radius:60px;
+
+    padding:18px 42px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.start-button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 15px 35px rgba(255,213,79,.40);
+
+}
+
+/*=================================
+BOTÓN MÚSICA
+=================================*/
+
+.music-button{
+
+    position:fixed;
+
+    right:18px;
+
+    bottom:18px;
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:#5B2C87;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+    transition:.3s;
+
+}
+
+.music-button:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*====================================================
+            CAPÍTULOS
+====================================================*/
+
+.chapter{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:60px;
+
+}
+
+.chapter-number{
+
+    background:#FFD54F;
+
+    color:#4B1D73;
+
+    padding:8px 22px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.chapter h2{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:42px;
+
+    color:#FFD54F;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+/*====================================================
+            TARJETAS
+====================================================*/
+
+.card{
+
+    width:100%;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:28px;
+
+    padding:22px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    display:block;
+
+    margin-bottom:20px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.card img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.card p{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    text-align:center;
+
+}
+
+/*====================================================
+            GALERÍA
+====================================================*/
+
+.gallery-section{
+
+    text-align:center;
+
+}
+
+.gallery-section h2{
+
+    font-family:'Dancing Script';
+
+    font-size:48px;
+
+    color:#FFD54F;
+
+    margin-bottom:15px;
+
+}
+
+.gallery-text{
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+/*====================================================
+        EFECTO POLAROID
+====================================================*/
+
+.gallery img{
+
+    width:100%;
+
+    background:white;
+
+    padding:8px;
+
+    border-radius:12px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.30);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.gallery img:nth-child(odd){
+
+    transform:rotate(-3deg);
+
+}
+
+.gallery img:nth-child(even){
+
+    transform:rotate(3deg);
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.08) rotate(0deg);
+
+}
+
+/*====================================================
+            FRASES
+====================================================*/
+
+.chapter p,
+.gallery-text{
+
+    opacity:.95;
+
+}
+/*====================================================
+                VIDEO
+====================================================*/
+
+.video-section{
+
+    text-align:center;
+
+}
+
+.video-section h2{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:48px;
+
+    color:#FFD54F;
+
+    margin-bottom:25px;
+
+}
+
+.video-section video{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+    margin-bottom:25px;
+
+}
+
+.video-section p{
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+/*====================================================
+                CONTADOR
+====================================================*/
+
+.counter-section{
+
+    text-align:center;
+
+}
+
+.counter-section h2{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:50px;
+
+    color:#FFD54F;
+
+    margin-bottom:25px;
+
+}
+
+.counter-box{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:30px;
+
+    padding:35px 20px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.30);
+
+}
+
+.counter-box h1{
+
+    font-size:75px;
+
+    color:#FFD54F;
+
+    margin-bottom:15px;
+
+}
+
+.counter-box p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/*====================================================
+                CARTA
+====================================================*/
+
+.letter-section{
+
+    text-align:center;
+
+}
+
+.letter-section h2{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:50px;
+
+    color:#FFD54F;
+
+    margin-bottom:30px;
+
+}
+
+.letter{
+
+    background:white;
+
+    color:#444;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+    text-align:left;
+
+}
+
+.letter p{
+
+    line-height:2;
+
+    font-size:17px;
+
+    white-space:pre-line;
+
+}
+
+/*====================================================
+                PROPUESTA
+====================================================*/
+
+.proposal{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.proposal h2{
+
+    font-family:'Dancing Script',cursive;
+
+    color:#FFD54F;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.proposal h1{
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+    line-height:1.5;
+
+}
+
+.proposal-heart{
+
+    font-size:90px;
+
+    margin:20px 0;
+
+    animation:pulse 2s infinite;
+
+}
+
+.proposal h3{
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+}
+
+/*====================================================
+                BOTONES
+====================================================*/
+
+.buttons{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.buttons button{
+
+    width:100%;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:50px;
+
+    background:#FFD54F;
+
+    color:#4B1D73;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.buttons button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 15px 35px rgba(255,213,79,.35);
+
+}
+
+/*====================================================
+                MENSAJE FINAL
+====================================================*/
+
+.ending{
+
+    text-align:center;
+
+}
+
+.ending h2{
+
+    font-family:'Dancing Script',cursive;
+
+    color:#FFD54F;
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.ending p{
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+
+/*====================================================
+                FOOTER
+====================================================*/
+
+footer{
+
+    text-align:center;
+
+    padding:40px 20px 70px;
+
+    opacity:.85;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+/*====================================================
+            ANIMACIONES
+====================================================*/
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .9s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.12);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/*====================================================
+            CORAZONES
+====================================================*/
+
+.heart{
+
+    position:fixed;
+
+    bottom:-40px;
+
+    pointer-events:none;
+
+    animation:heartUp linear forwards;
+
+    z-index:9999;
+
+}
+
+@keyframes heartUp{
+
+    0%{
+
+        transform:translateY(0) scale(.5);
+
+        opacity:0;
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:translateY(-120vh) scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
+
+/*====================================================
+            MODAL FOTOS
+====================================================*/
+
+.image-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:99999;
+
+}
+
+.image-modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.image-modal img{
+
+    width:92%;
+
+    max-width:600px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+
+}
+
+/*====================================================
+            MODAL FINAL
+====================================================*/
+
+.final-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.82);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.4s;
+
+    z-index:999999;
+
+}
+
+.final-modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.final-card{
+
+    width:100%;
+
+    max-width:380px;
+
+    background:white;
+
+    color:#4B1D73;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    text-align:center;
+
+    animation:popup .45s;
+
+}
+
+.final-card h2{
+
+    font-family:'Dancing Script',cursive;
+
+    font-size:48px;
+
+    color:#5B2C87;
+
+    margin-bottom:15px;
+
+}
+
+.final-card p{
+
+    line-height:1.8;
+
+    margin:18px 0;
+
+}
+
+.final-card button{
+
+    margin-top:20px;
+
+    border:none;
+
+    background:#5B2C87;
+
+    color:white;
+
+    padding:14px 35px;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.7);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*====================================================
+            EFECTOS
+====================================================*/
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+button:active{
+
+    transform:scale(.97);
+
+}
+
+/*====================================================
+            RESPONSIVE PC
+====================================================*/
+
+@media(min-width:900px){
+
+.hero-content,
+.chapter,
+.gallery-section,
+.video-section,
+.counter-section,
+.letter-section,
+.proposal,
+.ending,
+footer{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-size:82px;
+
+}
+
+.hero h2{
+
+    font-size:30px;
+
+}
+
+.chapter h2{
+
+    font-size:58px;
+
+}
+
+.gallery{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+.card{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.video-section video{
+
+    max-width:700px;
+
+}
+
+.letter{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.counter-box{
+
+    max-width:450px;
+
+    margin:auto;
+
+}
+
+.buttons{
+
+    width:420px;
+
+    margin:auto;
+
+}
+
+}
+
+/*====================================================
+            PEQUEÑOS DETALLES
+====================================================*/
+
+::selection{
+
+    background:#FFD54F;
+
+    color:#4B1D73;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
