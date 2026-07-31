@@ -25,12 +25,7 @@ body{
 
     font-family:'Poppins',sans-serif;
 
-    background:linear-gradient(
-        180deg,
-        #4B1D73 0%,
-        #663399 45%,
-        #8B5CF6 100%
-    );
+    background:#4B1D73;
 
     color:#ffffff;
 
@@ -39,7 +34,6 @@ body{
     position:relative;
 
 }
-
 /*=================================
 SCROLL
 =================================*/
